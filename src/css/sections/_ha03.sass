@@ -1,25 +1,102 @@
 .#{$ns}-body-ha03
   background: $color-yellow
+  padding: 0 50px
 
-  .#{$ns}-wrapper
-    max-width: 800px
+  > .#{$ns}-wrapper
+    max-width: 880px
 
 .#{$ns}-ha03
   margin-top: 12.3vw
 
+  > .#{$ns}-wrapper
+    max-width: 800px
 
 .#{$ns}-ha03-symbols
+  align-items: center
+  display: flex
+  flex-wrap: wrap
   padding: 0
+  margin-bottom: 8vw
 
   li
-    width: 25%
-    display: inline-block
     padding: 0
     margin: 0
-    text-align: right
+    flex: 1
+    text-align: center
+    transition: all 1s ease
 
-    &:nth-of-type(1), &:nth-of-type(2)
-      text-align: left
+    @media (max-width: #{$viewport-big - 1})
+      flex: 2
+      min-width: 50%
+      margin: 5vw 0
+
     img
-      width: 80%
+      width: 70%
       display: inline-block
+
+.#{$ns}-ha03-content
+  align-content: stretch
+
+  @media (max-width: #{$viewport-big - 1})
+    align-content: flex-start
+
+    .#{$ns}-col
+      min-width: 100%
+      padding-right: 0px !important
+
+    .#{$ns}-ha03-info
+      position: relative
+      top: auto
+      bottom: auto
+      min-width: 100%
+      margin-bottom: 7vw
+
+  .#{$ns}-col
+    position: relative
+    transition: all 1s ease
+
+.#{$ns}-ha03-info
+  background: $color-white
+  border-bottom: 8px solid $color-gray-dark
+  bottom: 0px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding: 15px 30px
+  position: absolute
+  top: 0px
+  width: calc(100% - 50px)
+
+  h1
+    +font-size(37)
+    margin-bottom: 0px
+    line-height: 1.1
+
+  p
+    opacity: 0.5
+    +font-size(25)
+    line-height: 1.2
+    margin-top: 14px
+
+    span
+      @media (max-width: #{$viewport-big - 1})
+        display: none
+
+.#{$ns}-ha03-about
+  p
+    line-height: 1.6
+    hyphens: auto
+    font-style: italic
+    +font-size(17)
+    &:first-of-type
+      margin-top: 0px
+      
+    &:last-of-type
+      opacity: 0.5
+      margin-bottom: 0px
+
+      img
+        display: inline-block
+        height: 18px
+        margin-right: 10px
+        transform: translateY(3px)

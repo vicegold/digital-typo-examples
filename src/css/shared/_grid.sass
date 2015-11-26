@@ -1,4 +1,23 @@
+$gridPadding: 50px
+
 .#{$ns}-wrapper
   margin: 0 auto
   max-width: 800px
   width: 100%
+
+.#{$ns}-row
+  display: flex
+  flex-wrap: wrap
+  padding: 0
+
+  .#{$ns}-col
+    flex: 1
+
+  &.has-padding
+    .#{$ns}-col
+      padding-right: $gridPadding
+
+      &:last-of-type
+        padding-right: 0px
+  &.is-centered
+    align-items: center
