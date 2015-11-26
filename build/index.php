@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php include('includes/head.php'); ?>
 
   <title>Laurids Düllmann · Digitale Typografie · WS 2015/16</title>
-
-  <script src="https://use.typekit.net/nly8rlg.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
-  <link href="/assets/css/styles.css" rel="stylesheet">
-
 </head>
 
 <body class="dt-body-directory">
@@ -29,7 +19,7 @@
           <a href="ha01/">HA 01 <span>· Das Magische Quadrat</span></a>
         </li>
         <li>
-          <a href="ha02/ha02.pdf">HA 02 <span>· Seltene Details und neue Tricks (PDF)</span></a>
+          <a href="ha02/ha02.pdf" download>HA 02 <span>· Seltene Details und neue Tricks (PDF)</span></a>
         </li>
         <li>
           <a href="ha03/">HA 03 <span>· Seltene Details und neue Tricks (Responsive)</span></a>
