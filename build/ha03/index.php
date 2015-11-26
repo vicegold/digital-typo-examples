@@ -26,7 +26,7 @@
             </div>
             <div class="dt-col">
               <div class="dt-ha03-about">
-                <p>Das Celcius Zeichen existiert als eigenständiges Unicode-Zeichen. Die generelle Empfehlung lautet jedoch, aus kompatibilitätsgründen nicht zu verwenden.</p>
+                <p>Das Celcius Zeichen existiert als eigenständiges Unicode-Zeichen. Die generelle Empfehlung lautet jedoch, aus Kompatibilitätsgründen nicht zu verwenden.</p>
 
                 <p>Weder Futura, Frutiger, DIN Pro, Arial, Open Sans oder PT&nbsp;Sans unterstützen das Zeichen.</p>
 
@@ -34,6 +34,10 @@
               </div>
             </div>
           </div>
+
+          <footer>
+            °F Existiert ebenfalls
+          </footer>
         </div>
       </section>
 
