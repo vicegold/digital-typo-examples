@@ -15,24 +15,24 @@
   align-items: center
   display: flex
   flex-wrap: wrap
-  padding: 0
   margin-bottom: 8vw
+  padding: 0
 
   li
-    padding: 0
-    margin: 0
     flex: 1
+    margin: 0
+    padding: 0
     text-align: center
     transition: all 1s ease
 
     @media (max-width: #{$viewport-big - 1})
       flex: 2
-      min-width: 50%
       margin: 5vw 0
+      min-width: 50%
 
     img
-      width: 70%
       display: inline-block
+      width: 70%
 
 .#{$ns}-ha03-content
   align-content: stretch
@@ -45,11 +45,11 @@
       padding-right: 0px !important
 
     .#{$ns}-ha03-info
+      bottom: auto
+      margin-bottom: 7vw
+      min-width: 100%
       position: relative
       top: auto
-      bottom: auto
-      min-width: 100%
-      margin-bottom: 7vw
 
   .#{$ns}-col
     position: relative
@@ -69,14 +69,14 @@
 
   h1
     +font-size(37)
-    margin-bottom: 0px
     line-height: 1.1
+    margin-bottom: 0px
 
   p
-    opacity: 0.5
     +font-size(25)
     line-height: 1.2
     margin-top: 14px
+    opacity: 0.5
 
     span
       @media (max-width: #{$viewport-big - 1})
@@ -84,10 +84,11 @@
 
 .#{$ns}-ha03-about
   p
-    line-height: 1.6
-    hyphens: auto
-    font-style: italic
     +font-size(17)
+    font-style: italic
+    hyphens: auto
+    line-height: 1.6
+
     &:first-of-type
       margin-top: 0px
 
@@ -104,7 +105,7 @@
 .#{$ns}-ha03
   footer
     border-top: 1px solid rgba($color-gray-medium,0.4)
-    margin-top: 8vw
-    text-align: center
-    padding-top: 7vw
     font-style: italic
+    margin-top: 8vw
+    padding-top: 7vw
+    text-align: center
