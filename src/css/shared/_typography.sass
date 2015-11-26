@@ -1,0 +1,103 @@
+// -----------------------------------------------------------------------------
+// Common font weights.
+// (http://www.w3.org/TR/css3-fonts/#font-weight-prop)
+// -----------------------------------------------------------------------------
+// 100 - Thin
+// 200 - Extra Light (Ultra Light)
+// 300 - Light
+// 400 - Normal
+// 500 - Medium
+// 600 - Semi Bold (Demi Bold)
+// 700 - Bold
+// 800 - Extra Bold (Ultra Bold)
+// 900 - Black (Heavy)
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// Main fonts
+// -----------------------------------------------------------------------------
+$font-text: 'ff-tisa-web-pro'
+$font-head: 'proxima-nova'
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// Base font size
+// -----------------------------------------------------------------------------
+$font-size: 16 // Enter in pixels
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// Font-size calculator.
+// -----------------------------------------------------------------------------
+@mixin font-size($sizeValue: #{$font-size / 10})
+  // font-size: $sizeValue + px
+  font-size: ($sizeValue / $font-size) + rem
+
+$baseline-px: #{$font-size}px
+@mixin rem($property, $px-values)
+  $baseline-rem: $baseline-px / 1rem
+  #{$property}: $px-values
+  @if type-of($px-values) == "number"
+    #{$property}: $px-values / $baseline-rem
+  @else
+    $rem-values: unquote("")
+    @each $value in $px-values
+      @if $value == 0 or type-of($value) == "string" or type-of($value) == "color"
+        $rem-values: append($rem-values, $value)
+      @else
+        $rem-values: append($rem-values, $value / $baseline-rem)
+    #{$property}: $rem-values
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// Document basics.
+// -----------------------------------------------------------------------------
+:root
+  color: $text-color
+  font:
+    family: $font-text
+    size: 16px
+  line-height: 1.4em
+  text-rendering: optimizeLegibility
+
+body
+  font-family: "ff-tisa-web-pro"
+  padding-right: 50px
+  margin-left: 148px
+  color:
+  padding-bottom: 100px
+
+// -----------------------------------------------------------------------------
+
+
+
+// -----------------------------------------------------------------------------
+// Headlines.
+// -----------------------------------------------------------------------------
+
+.#{$ns}-main-styles
+
+  h1, h2
+      font-family: "proxima-nova"
+
+  h1
+      text-transform: uppercase
+      +font-size(44.8)
+      margin: 0 0 26px 0
+      letter-spacing: 2px
+      font-weight: 800
+      // padding-right: 60px
+
+  h2
+      +font-size(22)
+      color: $color-gray-medium
+      margin: 0 0 10px 0
+      font-weight: 500
+
+  p
+      +font-size(17)
+      margin-bottom: 21px
+      line-height: 1.7
+// -----------------------------------------------------------------------------
