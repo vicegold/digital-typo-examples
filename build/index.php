@@ -24,6 +24,9 @@
         <li>
           <a href="ha03/">HA 03 <span>· Seltene Details und neue Tricks (Responsive)</span></a>
         </li>
+        <li>
+          <a href="ha04/">HA 04 <span>· Bloglayout</span></a>
+        </li>
       </ul>
 
       <footer>
