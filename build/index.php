@@ -9,7 +9,7 @@
     <div class="dt-wrapper">
 
       <header>
-        <h1>Laurids Düllmann macht</h1>
+        <h1>Laurids Düllmann</h1>
 
         <h2>Digitale Typografie · Wintersemester 2015&thinsp;/&thinsp;16</h2>
       </header>
